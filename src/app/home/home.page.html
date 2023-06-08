@@ -1,7 +1,10 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      Лабораторна робота №8 з Проектування інформаційних систем
+      Виконав студент групи КН-32 Грицов Ян Олександрович
+      Тема роботи: Розробка через тестування
+
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -12,9 +15,36 @@
       <ion-title size="large">Blank</ion-title>
     </ion-toolbar>
   </ion-header>
+  <ion-card>
+    <ion-card-header>
+      <div><ion-button (click)="color()" expand="block" fill="clear"
+          shape="round">
+          Змінити колір
+        </ion-button>
+        <ion-button (click)="move()" expand="block" fill="clear" shape="round">
+          Рух
+        </ion-button>
+        <ion-button (click)="rotate()" expand="block" fill="clear" shape="round">
+          Повернути
+        </ion-button>
+      </div>
+      <div><ion-button (click)="createTriangle()" expand="block" fill="clear"
+          shape="round">
+          Трикутник
+        </ion-button>
+        <ion-button (click)="createPramTr()" expand="block" fill="clear"
+          shape="round">
+          Прямокутний Трикутник
+        </ion-button>
+        <ion-button (click)="createRiwTr()" expand="block" fill="clear"
+          shape="round">
+          Рівнобедренний трикутник
+        </ion-button></div>
+    </ion-card-header>
+    <ion-card-content>
+      <canvas id="canvas"></canvas>
+    </ion-card-content>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+  </ion-card>
+
 </ion-content>
